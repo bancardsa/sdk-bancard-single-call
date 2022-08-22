@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "35f9012a-5a90-4312-be52-460d3dcd69f2",
+		"name": "cajapos-bancard-mre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Venta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"monto\": 1,\n\t\"facturaNro\": 987987123,\n\t\"plan\": 0,\n\t\"cuotas\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/pos/venta-ux",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pos",
+						"venta-ux"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mensaje Eco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"eco\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/pos/eco",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pos",
+						"eco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Puertos Disponibles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pos/list",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pos",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
