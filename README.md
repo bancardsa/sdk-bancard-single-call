@@ -5,3 +5,4 @@
 |__ **DocumentacionSDKIntegracionMRE.pdf** - Documentación del SDK<br>
 |__ **README.md** - Estructura del directorio<br>
 |__ **cajapos-bancard-mre.postman_collection.json** - Ejemplos de POSTMAN para pruebas
+
